@@ -11,4 +11,4 @@
       mode: '0755'
 
   - name: Run the deploy script on remote
-    shell: bash /home/xboxuser/deploy.sh
+    shell: bash /home/vboxuser/deploy.sh
