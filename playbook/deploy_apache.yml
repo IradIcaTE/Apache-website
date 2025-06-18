@@ -6,13 +6,13 @@
   tasks:
     - name: Copy project files to remote
       copy:
-        src: ../site/*
+        src: home/Parth/jenkins-agent/project-2-apache-website/site/*
         dest: /home/vboxuser/site/
         mode: '0755'
 
     - name: Copy deploy script to remote
       copy:
-        src: ../scripts/deploy.sh
+        src: home/Parth/jenkins-agent/project-2-apache-website/scripts/deploy.sh
         dest: /home/vboxuser/deploy.sh
         mode: '0755'
 
