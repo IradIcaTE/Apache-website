@@ -4,10 +4,10 @@
   become: true
 
   tasks:
-  - name: Copy project files to remote
+  - name: Copy deploy script to remote
     copy:
-      src: "{{ playbook_dir }}/../site"
-      dest: /home/vboxuser/apache-site/
+      src: "{{ playbook_dir }}/../scripts/deploy.sh"
+      dest: /home/vboxuser/deploy.sh
       mode: '0755'
 
   - name: Copy deploy script to remote
