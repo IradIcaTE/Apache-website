@@ -6,15 +6,15 @@
   tasks:
     - name: Copy project files to remote
       copy:
-        src: ../site/
-        dest: /home/parth/site/
+        src: ../site/*
+        dest: /home/vboxuser/site/
         mode: '0755'
 
     - name: Copy deploy script to remote
       copy:
         src: ../scripts/deploy.sh
-        dest: /home/parth/deploy.sh
+        dest: /home/vboxuser/deploy.sh
         mode: '0755'
 
     - name: Run the deploy script on remote
-      shell: bash /home/parth/deploy.sh
+      shell: bash /home/xboxuser/deploy.sh
