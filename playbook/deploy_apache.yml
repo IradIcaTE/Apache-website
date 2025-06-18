@@ -1,0 +1,15 @@
+---
+- name: Deploy Apache container on remote server
+  hosts: webservers
+  become: true
+
+  tasks: 
+  - name: Copy project folder to remote
+    copy:
+      scr: /home/Parth/Developing/J + D + A/project-2-apache-website/*
+      dest: /tmp/project-2-apache-website
+      mode: 0755
+
+  - name: Run deployment script
+    shell: bash /tmp/project-2-apache-website/scripts/deploy.shell
+    
