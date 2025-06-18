@@ -11,5 +11,5 @@
       mode: 0755
 
   - name: Run deployment script
-    shell: bash /tmp/project-2-apache-website/scripts/deploy.shell
+    shell: bash /tmp/project-2-apache-website/scripts/deploy.sh
     
