@@ -10,11 +10,5 @@
       dest: /home/vboxuser/deploy.sh
       mode: '0755'
 
-  - name: Copy deploy script to remote
-    copy:
-      src: home/Parth/jenkins-agent/project-2-apache-website/scripts/deploy.sh
-      dest: /home/vboxuser/deploy.sh
-      mode: '0755'
-
   - name: Run the deploy script on remote
     shell: bash /home/xboxuser/deploy.sh
